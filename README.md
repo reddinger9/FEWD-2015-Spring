@@ -1,4 +1,3 @@
 # FEWD 2015 - Spring
 
-* Author: 
-* Website: 
+* Author: Robbe Reddinger
