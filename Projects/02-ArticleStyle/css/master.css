@@ -1,0 +1,152 @@
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	font-family: 'georgia';
+	color: #222;
+}
+
+
+div, 
+header, 
+figure, 
+nav, 
+section, 
+figcaption,
+blockquote {
+	width: 60%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header, figcaption, h1, h2, h3 {
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+header p {
+	font-size: 20px;
+	color: #999;
+	text-align: center;
+}
+
+figure {
+	width: 100%;
+}
+
+h1, h2, h3 {
+	font-size: 60px;
+	font-weight: 800;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+.img1 {
+	border: 1px solid #ccc;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img2 {
+	float: right;
+}
+
+figcaption {
+	font-size: 14px;
+	color: #666;
+}
+
+nav {
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+ol li {
+	font-family: georgia;
+	font-size: 20px;
+}
+
+ol ol {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+ol ol li {
+	font-family: georgia;
+	font-size: 16px;
+	color: #666;
+}
+
+a { color: #222;}
+a:visited {color: #222;}
+ol ol a { color: #666;}
+ol ol a:visited {color: #666;}
+
+blockquote {
+	width: 120%;
+	margin-left: -10%;
+	margin-right: -10%;
+	padding: 20px;
+	background-color: #f6f6f6;
+	border-left: 10px solid #e3e3e3;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.contents {
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
