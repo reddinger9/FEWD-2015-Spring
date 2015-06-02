@@ -11,23 +11,38 @@
 }
 
 body {
-	width: 100%;
 	font-family: 'georgia';
 	color: #222;
+}
+
+a,
+a:visited {
+	color: #222;
+}
+
+figcaption,
+ol ol li,
+ol ol a,
+ol ol a:visited
+{
+	color: #666;
+}
+
+header p, 
+.contents
+{
+	color: #999;
 }
 
 
 div, 
 header, 
-figure, 
 nav, 
 section, 
-figcaption,
-blockquote {
+blockquote, 
+.figcap-1 {
 	width: 60%;
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 10px auto;
 }
 
 header, figcaption, h1, h2, h3 {
@@ -36,12 +51,7 @@ header, figcaption, h1, h2, h3 {
 
 header p {
 	font-size: 20px;
-	color: #999;
 	text-align: center;
-}
-
-figure {
-	width: 100%;
 }
 
 h1, h2, h3 {
@@ -61,29 +71,44 @@ h3 {
 	font-size: 28px;
 }
 
-.img1 {
+img {
 	border: 1px solid #ccc;
+}
+
+
+.img1, .img2, .list-2 {
 	display: block;
+}
+
+.img1 { 
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .img2 {
 	float: right;
+	width: 50%;
+	margin-right: -20%;
+}
+
+.list-2 {
+	float: left;
+}
+
+.section-5
+{
+	overflow: auto;
 }
 
 figcaption {
 	font-size: 14px;
-	color: #666;
 }
 
 nav {
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding: 50px 0px;
+	margin: 50px auto;
 }
 
 ol li {
@@ -99,13 +124,8 @@ ol ol {
 ol ol li {
 	font-family: georgia;
 	font-size: 16px;
-	color: #666;
 }
 
-a { color: #222;}
-a:visited {color: #222;}
-ol ol a { color: #666;}
-ol ol a:visited {color: #666;}
 
 blockquote {
 	width: 120%;
@@ -125,12 +145,6 @@ blockquote {
 	font-size: 14px;
 	color: #999;
 }
-
-
-
-
-
-
 
 
 
