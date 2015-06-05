@@ -9,9 +9,16 @@
 
 body {
 	font-family: 'Lato', helvetica, sans-serif;
+	color: #fff;
 	background: #AC8420;
 	padding: 0px;
 	margin: 0px;
+}
+
+header h1,
+h3,
+caption {
+	font-family: 'Sanchez', 'Times New Roman', serif;
 }
 
 header, 
@@ -34,8 +41,6 @@ header {
 }
 
 header h1 {
-	font-family: 'Sanchez', 'Times New Roman', serif;
-	color: #fff;
 	font-size: 60px;
 	text-align: center;
 }
@@ -56,19 +61,86 @@ header p {
 	margin: 0px auto;
 }
 
+/* 
+	\/ Setting Section Widths \/ 
+ */
+
+ .section-1, 
+ .section-2 {
+ 	width: 60%;
+ 	margin: auto;
+ }
+
+
+
 caption {
 	font-size: 32px;
 	color: #222;
 }
 
-.coffee-menu {
+td {
+	font-size: 16px;
+}
+
+td:nth-child(odd) {
+	
+}
+
+td:nth-child(even) {
+	color: #DECC9C;
+}
+
+.table-1 {
 
 }
 
-.espresso-menu {
+
+
+.table-2 {
 
 }
 
-.hours {
+/*
+======
+Hours Section
+======
+*/
 
+h3 {
+	font-size: 26px;
+	color: #222;
 }
+
+.section-2 {
+	background: #fff;
+	font-size: 16px;
+	color: #666;
+}
+
+.float-right {
+	float: right;
+}
+
+/*
+===========
+Clearfix
+===========
+*/
+
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.clear:after {
+	clear:both;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+
+
