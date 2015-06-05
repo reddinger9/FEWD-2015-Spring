@@ -21,8 +21,9 @@ footer {
 }
 
 header {
-	height: 550px;
+	height: 600px;
 	width: 100%;
+	padding-bottom: 50px;
 }
 
 .background {
@@ -47,7 +48,7 @@ header p {
 
 .logo {
 	margin: 0px;
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 .logo img {
