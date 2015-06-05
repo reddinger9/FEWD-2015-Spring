@@ -1,0 +1,57 @@
+
+
+body {
+	font-family: 'Lato', helvetica, sans-serif;
+	background: #AC8420;
+
+		
+}
+
+header {
+	background-color: #222;
+	background-image: url('../images/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	display: block;
+}
+
+header h1 {
+	font-family: 'Sanchez', 'Times New Roman', serif;
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+}
+
+header p {
+	font-size: 22px;
+	color: #ccc;
+	text-align: center;
+}
+
+.logo {
+	display: block;
+	margin: 100px auto 0px;
+
+}
+
+.menu {
+
+}
+
+.coffee-menu {
+
+}
+
+.espresso-menu {
+
+}
+
+.hours {
+
+}
