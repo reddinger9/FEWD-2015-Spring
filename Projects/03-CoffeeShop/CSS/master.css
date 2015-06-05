@@ -1,24 +1,35 @@
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
 	font-family: 'Lato', helvetica, sans-serif;
 	background: #AC8420;
+	padding: 0px;
+	margin: 0px;
+}
 
-		
+header, 
+section,
+footer {
+	display: block;
 }
 
 header {
+	height: 550px;
+	width: 100%;
+}
+
+.background {
 	background-color: #222;
 	background-image: url('../images/header.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	top: 0;
-	left: 0;
-	position: absolute;
-	height: 400px;
-	width: 100%;
-	display: block;
+	background-size: 100%;
 }
 
 header h1 {
@@ -35,13 +46,18 @@ header p {
 }
 
 .logo {
-	display: block;
-	margin: 100px auto 0px;
-
+	margin: 0px;
+	padding-top: 100px;
 }
 
-.menu {
+.logo img {
+	display: block;
+	margin: 0px auto;
+}
 
+caption {
+	font-size: 32px;
+	color: #222;
 }
 
 .coffee-menu {
