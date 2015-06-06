@@ -10,9 +10,10 @@
 body {
 	font-family: 'Lato', helvetica, sans-serif;
 	color: #fff;
-	background: #AC8420;
+	background: #222;
 	padding: 0px;
 	margin: 0px;
+	width: 100%;
 }
 
 header h1,
@@ -27,14 +28,16 @@ footer {
 	display: block;
 }
 
+section {
+	background: #AC8420;
+}
+
 header {
 	height: 600px;
-	width: 100%;
 	padding-bottom: 50px;
 }
 
 .background {
-	background-color: #222;
 	background-image: url('../images/header.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -65,36 +68,59 @@ header p {
 	\/ Setting Section Widths \/ 
  */
 
- .section-1, 
- .section-2 {
- 	width: 60%;
- 	margin: auto;
- }
+/*
+ .section-1 {
+ 	width: 100%;
 
+ }
+ */
+
+ .section-1 {
+	width: 50%;
+ 	margin: auto;
+ 	padding: 50px 0px;
+ }
 
 
 caption {
 	font-size: 32px;
 	color: #222;
+	margin: 50px 0px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
 }
 
 td {
 	font-size: 16px;
+	border: none;
+	border-bottom: 2px solid #9B761C;
+	padding: 15px 0px;
 }
 
-td:nth-child(odd) {
-	
+td:nth-child(3n-2) {
+	width: 33%;
 }
 
-td:nth-child(even) {
+td:nth-child(3n-1) {
 	color: #DECC9C;
+	width: 10%;
+}
+
+td:nth-child(3) {
+  width: 5%; 
+  border: none;
+}
+
+.no-border td {
+	border: none;
 }
 
 .table-1 {
-
+	
 }
-
-
 
 .table-2 {
 
@@ -115,6 +141,19 @@ h3 {
 	background: #fff;
 	font-size: 16px;
 	color: #666;
+	width: 100%;
+	padding: 75px 0px;
+}
+
+.section-2 div {
+	width: 50%;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.section-2 figure {
+	margin: 0px;
+	padding: 0px;
 }
 
 .float-right {
@@ -127,6 +166,7 @@ Clearfix
 ===========
 */
 
+.clear:before,
 .clear:after {
 	content: "";
 	display: table;
@@ -139,6 +179,13 @@ Clearfix
 .clear {
 	clear:both;
 }
+
+/*
+============
+Directions
+============
+*/
+
 
 
 
