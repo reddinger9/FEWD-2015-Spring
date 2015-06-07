@@ -37,6 +37,12 @@ header {
 	padding-bottom: 50px;
 }
 
+footer {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: .20em;
+}
+
 .background {
 	background-image: url('../images/header.jpg');
 	background-repeat: no-repeat;
@@ -54,31 +60,26 @@ header p {
 	text-align: center;
 }
 
-.logo {
+.logo-1 {
 	margin: 0px;
-	padding-top: 150px;
 }
 
-.logo img {
+
+.logo-1 img {
 	display: block;
 	margin: 0px auto;
+	padding: 150px 0px 0px;
 }
 
 /* 
 	\/ Setting Section Widths \/ 
  */
 
-/*
- .section-1 {
- 	width: 100%;
-
- }
- */
 
  .section-1 {
 	width: 50%;
  	margin: auto;
- 	padding: 50px 0px;
+ 	padding: 50px 0px 75px;
  }
 
 
@@ -160,6 +161,11 @@ h3 {
 	float: right;
 }
 
+.line-height {
+	line-height: 2em;
+	font-style: normal;
+}
+
 /*
 ===========
 Clearfix
@@ -182,11 +188,47 @@ Clearfix
 
 /*
 ============
-Directions
+Footer
 ============
 */
 
 
+.copy,
+.social,
+.logo-2 {
+	height: 100px;
+	width: 33%;
+	margin: 75px 0px;
+	display: block;
+	float: left;
+}
+
+.copy, .social {
+	padding-top: 45px;
+}
+
+.logo-2 {
+	padding-top: 25px;
+}
+
+.logo-2 img {
+	display: block;
+	margin: 0px auto;
+}
+
+.copy p {
+	margin: auto;
+	text-align: center;
+}
+
+.inline li {
+	display: inline;
+	list-style-type: none;
+}
+
+ul {
+	margin: auto;
+}
 
 
 
