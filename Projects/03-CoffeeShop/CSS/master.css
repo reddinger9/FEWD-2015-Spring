@@ -14,6 +14,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
+	min-width: 600px;
 }
 
 header h1,
@@ -119,13 +120,6 @@ td:nth-child(3) {
 	border: none;
 }
 
-.table-1 {
-	
-}
-
-.table-2 {
-
-}
 
 /*
 ======
@@ -159,6 +153,33 @@ h3 {
 
 .float-right {
 	float: right;
+}
+
+
+.section-2 div.directions {
+	float: left;
+	width: 155px;
+	height: 40px;
+	margin-top: 25px;
+}
+
+.directions a {
+	border: 2px solid #AC8420;
+	cursor: pointer;
+	color: #AC8420;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	padding: 20px 20px;
+}
+
+a:link {color: #AC8420;
+		text-decoration: none;
+}
+
+a:hover {color: #fff;
+		background: #666;
+		border: #666;
 }
 
 .line-height {
