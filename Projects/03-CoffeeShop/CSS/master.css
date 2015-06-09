@@ -42,6 +42,11 @@ footer {
 	letter-spacing: .20em;
 }
 
+header.text {
+	width: 100%;
+	height: 50px;
+}
+
 /*
 ========
 Header
@@ -51,6 +56,8 @@ Header
 .background {
 	background-image: url('../images/header.jpg');
 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 header h1 {
@@ -261,12 +268,17 @@ Footer
 	display: inline-block;
 }
 
-
-/*
-.inline li:first-child {
-	list-style-type: none;
+.inline li:after {
+	content: '\00b7';
+	margin: 0px 5px;
+	font-size: 12px;
 }
-*/
+
+.inline li:last-child:after {
+	content: '';
+}
+
+
 
 
 
