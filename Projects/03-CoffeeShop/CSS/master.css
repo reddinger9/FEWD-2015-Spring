@@ -14,7 +14,6 @@ body {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
-	min-width: 600px;
 }
 
 header h1,
@@ -34,8 +33,7 @@ section {
 }
 
 header {
-	height: 600px;
-	padding-bottom: 50px;
+	height: 550px;
 }
 
 footer {
@@ -44,10 +42,15 @@ footer {
 	letter-spacing: .20em;
 }
 
+/*
+========
+Header
+========
+*/
+
 .background {
 	background-image: url('../images/header.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 header h1 {
@@ -73,7 +76,9 @@ header p {
 }
 
 /* 
-	\/ Setting Section Widths \/ 
+=	=	=	=	
+Coffee Menu
+=	=	=	=	
  */
 
 
@@ -102,14 +107,20 @@ td {
 	padding: 15px 0px;
 }
 
+/* --- Style for Drink Names -- */
+
 td:nth-child(3n-2) {
 	width: 33%;
 }
+
+/* -- Style for Prices -- */
 
 td:nth-child(3n-1) {
 	color: #DECC9C;
 	width: 10%;
 }
+
+/* -- Break in middle of menu -- */
 
 td:nth-child(3) {
   width: 5%; 
@@ -122,9 +133,9 @@ td:nth-child(3) {
 
 
 /*
-======
+=	=	=	=	
 Hours Section
-======
+=	=	=	=	
 */
 
 h3 {
@@ -242,14 +253,21 @@ Footer
 	text-align: center;
 }
 
-.inline li {
-	display: inline;
-	list-style-type: none;
-}
-
-ul {
+.social ul {
 	margin: auto;
 }
+
+.inline li {
+	display: inline-block;
+}
+
+
+/*
+.inline li:first-child {
+	list-style-type: none;
+}
+*/
+
 
 
 
