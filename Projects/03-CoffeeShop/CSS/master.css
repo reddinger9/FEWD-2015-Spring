@@ -18,7 +18,8 @@ body {
 
 header h1,
 h3,
-caption {
+caption,
+.section-1 h2 {
 	font-family: 'Sanchez', 'Times New Roman', serif;
 }
 
@@ -88,55 +89,60 @@ Coffee Menu
 =	=	=	=	
  */
 
+.no-border {
+	border: none;
+}
 
  .section-1 {
 	width: 50%;
  	margin: auto;
- 	padding: 50px 0px 75px;
+ 	padding: 75px 0px 100px;
+ 	overflow: hidden;
  }
 
-
-caption {
+.section-1 h2 {
 	font-size: 32px;
 	color: #222;
-	margin: 50px 0px;
 }
 
-table {
+.espresso {
+	padding-top: 150px;
+}
+
+.menu {
+	list-style-type: none;
 	width: 100%;
-	border-collapse: collapse;
+	padding: 0px;
 }
 
-td {
+.menu li {
+	border-bottom: 2px solid #9B761C;	
+	padding: 10px 0px 15px;
+}
+
+.menu li:nth-child(odd) {
+	width: 48% ;
+	float: left;
+}
+
+.menu li:nth-child(even) {
+	float: right;
+	width: 48%;
+}
+
+.menu li span:nth-child(odd) {
 	font-size: 16px;
-	border: none;
-	border-bottom: 2px solid #9B761C;
-	padding: 15px 0px;
 }
 
-/* --- Style for Drink Names -- */
-
-td:nth-child(3n-2) {
-	width: 33%;
-}
-
-/* -- Style for Prices -- */
-
-td:nth-child(3n-1) {
+.menu li span:nth-child(even) {
 	color: #DECC9C;
-	width: 10%;
+	float: right;
 }
 
-/* -- Break in middle of menu -- */
-
-td:nth-child(3) {
-  width: 5%; 
-  border: none;
-}
-
-.no-border td {
+.menu li.no-border {
 	border: none;
 }
+
 
 
 /*
@@ -145,9 +151,10 @@ Hours Section
 =	=	=	=	
 */
 
-h3 {
+h2 {
 	font-size: 26px;
 	color: #222;
+	text-align: center
 }
 
 .section-2 {
@@ -277,6 +284,17 @@ Footer
 .inline li:last-child:after {
 	content: '';
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
