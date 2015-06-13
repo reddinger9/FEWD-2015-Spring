@@ -1,304 +1,119 @@
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
 body {
 	font-family: 'Lato', helvetica, sans-serif;
 	color: #fff;
 	background: #222;
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
 }
 
-header h1,
+/* Typography */
+
+h1,
+h2,
 h3,
-caption,
-.section-1 h2 {
-	font-family: 'Sanchez', 'Times New Roman', serif;
+h4,
+h5,
+h6 {
+	color: #111;
+	font-family: "Sanchez", serif;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 25px 0;
 }
 
-header, 
-section,
-footer {
-	display: block;
-}
-
-section {
-	background: #AC8420;
-}
-
-header {
-	height: 550px;
-}
-
-footer {
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: .20em;
-}
-
-header.text {
-	width: 100%;
-	height: 50px;
-}
-
-/*
-========
-Header
-========
-*/
-
-.background {
-	background-image: url('../images/header.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-header h1 {
+h1 {
 	font-size: 60px;
-	text-align: center;
 }
-
-header p {
-	font-size: 22px;
-	color: #ccc;
-	text-align: center;
-}
-
-.logo-1 {
-	margin: 0px;
-}
-
-
-.logo-1 img {
-	display: block;
-	margin: 0px auto;
-	padding: 150px 0px 0px;
-}
-
-/* 
-=	=	=	=	
-Coffee Menu
-=	=	=	=	
- */
-
-.no-border {
-	border: none;
-}
-
- .section-1 {
-	width: 50%;
- 	margin: auto;
- 	padding: 75px 0px 100px;
- 	overflow: hidden;
- }
-
-.section-1 h2 {
-	font-size: 32px;
-	color: #222;
-}
-
-.espresso {
-	padding-top: 150px;
-}
-
-.menu {
-	list-style-type: none;
-	width: 100%;
-	padding: 0px;
-}
-
-.menu li {
-	border-bottom: 2px solid #9B761C;	
-	padding: 10px 0px 15px;
-}
-
-.menu li:nth-child(odd) {
-	width: 48% ;
-	float: left;
-}
-
-.menu li:nth-child(even) {
-	float: right;
-	width: 48%;
-}
-
-.menu li span:nth-child(odd) {
-	font-size: 16px;
-}
-
-.menu li span:nth-child(even) {
-	color: #DECC9C;
-	float: right;
-}
-
-.menu li.no-border {
-	border: none;
-}
-
-
-
-/*
-=	=	=	=	
-Hours Section
-=	=	=	=	
-*/
 
 h2 {
+	font-size: 32px;
+}
+
+h3 {
 	font-size: 26px;
-	color: #222;
-	text-align: center
 }
 
-.section-2 {
-	background: #fff;
-	font-size: 16px;
-	color: #666;
+p {
+	margin: 15px 0;
+}
+
+/* Bars */
+
+.bar {
+	background: #222;
+	clear: both;
+	overflow: hidden;
+	padding: 100px 0;
 	width: 100%;
-	padding: 75px 0px;
 }
 
-.section-2 div {
-	width: 50%;
-	margin: 0px auto;
-	padding: 0px;
+.bar_black {
+	background-color: #111;
+	color: #fff;
 }
 
-.section-2 figure {
-	margin: 0px;
-	padding: 0px;
-}
-
-.float-right {
-	float: right;
+.bar_gold {
+	background-color: #AC8420;
 }
 
 
-.section-2 div.directions {
-	float: left;
-	width: 155px;
-	height: 40px;
-	margin-top: 25px;
-}
-
-.directions a {
-	border: 2px solid #AC8420;
-	cursor: pointer;
-	color: #AC8420;
-	line-height: 40px;
-	font-size: 16px;
+.header {
+	background: #222 url(../images/header.jpg) no-repeat center;
+	background-size: cover;
 	text-align: center;
-	padding: 20px 20px;
+	padding: 150px 0 75px;
 }
 
-a:link {color: #AC8420;
-		text-decoration: none;
+
+.logo-1 {
+	padding-bottom: 20px;
+	color: #fff;
 }
 
-a:hover {color: #fff;
-		background: #666;
-		border: #666;
-}
 
-.line-height {
-	line-height: 2em;
-	font-style: normal;
-}
-
-/*
-===========
-Clearfix
-===========
-*/
-
-.clear:before,
-.clear:after {
-	content: "";
-	display: table;
-}
-
-.clear:after {
-	clear:both;
-}
-
-.clear {
-	clear:both;
-}
-
-/*
-============
-Footer
-============
-*/
-
-
-.copy,
-.social,
-.logo-2 {
-	height: 100px;
-	width: 33%;
-	margin: 75px 0px;
-	display: block;
-	float: left;
-}
-
-.copy, .social {
-	padding-top: 45px;
-}
-
-.logo-2 {
-	padding-top: 25px;
-}
-
-.logo-2 img {
-	display: block;
-	margin: 0px auto;
-}
-
-.copy p {
-	margin: auto;
-	text-align: center;
-}
-
-.social ul {
-	margin: auto;
-}
-
-.inline li {
-	display: inline-block;
-}
-
-.inline li:after {
-	content: '\00b7';
-	margin: 0px 5px;
-	font-size: 12px;
-}
-
-.inline li:last-child:after {
+.logo-1:before {
+	background: url('../images/logo_large.png') no-repeat center;
 	content: '';
+	display: block;
+	margin: 0 auto 20px;
+	height: 100px;
+	width: 100px;
+}
+
+.intro {
+	font-size: 22px;
+	color: #ccc;
+	margin: 0 0 20px;
+	text-align: center;
 }
 
 
 
 
+/*
+= 	=	=	=
+MEDIA QUERIES
+=	=	=	=
+*/
 
 
+/* = SM = */
+@media screen and (min-width: 740px) {
+	
+}
 
+/* = M = */
+@media screen and (min-width: 980px) {
+	
+}
 
+/* = L = */
+@media screen and (min-width: 740px) {
+	
+}
 
-
-
-
-
-
-
-
-
+/* = XL = */
+@media screen and (min-width: 740px) {
+	
+}
 
