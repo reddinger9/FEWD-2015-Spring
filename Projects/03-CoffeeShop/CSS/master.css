@@ -22,7 +22,7 @@ h6 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 40px;
 }
 
 h2 {
@@ -81,13 +81,46 @@ p {
 }
 
 .intro {
-	font-size: 22px;
+	font-size: 15px;
 	color: #ccc;
 	margin: 0 0 20px;
 	text-align: center;
 }
 
+/*
+= = MENU = = 
+*/
 
+/*
+.border {
+	border: 2px solid white;
+}
+*/
+
+
+.no-border {
+	border: none;
+}
+
+.border-bottom {
+
+}
+
+.h2-coffee {
+	text-align: center;
+}
+
+.menu-item {
+	margin: 0 0 20px;
+	border-bottom: 2px solid #9B761C;
+	padding: 0 0 15px;
+}
+
+.menu-price {
+	color: #DECC9C;	
+	text-align: right;
+	padding-right: 20px;
+}
 
 
 /*
@@ -99,12 +132,24 @@ MEDIA QUERIES
 
 /* = SM = */
 @media screen and (min-width: 740px) {
-	
+
+	h1 {
+		font-size: 60px;
+	}
+
+	.intro {
+		font-size: 22px;
+	}
+
 }
 
 /* = M = */
 @media screen and (min-width: 980px) {
-	
+
+	.menu-price {
+		text-align: left;
+	}
+
 }
 
 /* = L = */
