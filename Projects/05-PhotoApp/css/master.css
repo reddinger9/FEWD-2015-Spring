@@ -21,14 +21,13 @@ p {
 /* === SECTION BACKGROUNDS AND STYLES === */
 
 header {
-	padding: 50px 0 75px;
+	padding: 25px 0 50px;
 	background: linear-gradient(to top, #e77e04, #fff 20%);
 }
 
 .bar_orange {
 	background-image: url(../images/intro_bg.jpg);
 	background-size: cover;
-	padding: 100px 0;
 	position: relative;
 }
 
@@ -41,7 +40,6 @@ header {
 	bottom: 50px;
 	right: 100px;
 	overflow: visible;
-	z-index: 5;
 }
 
 .bar_orange_bottom_gradient {
@@ -50,12 +48,15 @@ header {
 	height: 50px;
 	width: 100%;
 	bottom: 0;
-	z-index: ;
 }
 
 .bar_grey {
 	background: linear-gradient(to bottom, #fff, #eee 15%, #eee 85%, #fff);
 	padding: 100px 0;
+}
+
+.section_main {
+	padding: 50px 0 100px;
 }
 
 .section_features {
@@ -68,7 +69,7 @@ header {
 
 .section_download {
 	background: #fff;
-	padding: 100px;
+	padding: 100px 0;
 	text-align: center;
 }
 
@@ -197,94 +198,93 @@ h1 {
 	color: #777;
 }
 
-.img_1 {
-}
-.img_1:after {
+.img_1:after,
+.img_2:after,
+.img_3:after,
+.img_4:after,
+.img_5:after,
+.img_6:after,
+.img_7:after,
+.img_8:after,
+ {
 	content: '';
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
+}
+
+ .img_1:after {
+ 	content: '';
 	background-image: url(../images/photos/01.jpg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
+	height: 150px;
+	width: 150px;
+	background-size: cover;
 	display: block;
 }
 
 .img_2:after {
 	content: '';
 	background-image: url(../images/photos/02.jpg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
-	display: block;	
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
 }
 
 .img_3:after {
 	content: '';
 	background-image: url(../images/photos/03.jpg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
-	display: block;	
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
 }
 
 .img_4:after {
 	content: '';
 	background-image: url(../images/photos/04.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
+	height: 150px;
+	width: 150px;
+	background-size: cover;
 	display: block;
 }
 
 .img_5:after {
 	content: '';
 	background-image: url(../images/photos/05.jpg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
-	display: block;	
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
 }
 
 .img_6:after {
 	content: '';
 	background-image: url(../images/photos/06.jpg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
-	display: block;	
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
 }
 
 .img_7:after {
 	content: '';
 	background-image: url(../images/photos/07.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 200px;
-	width: 180px;
-	background-size: contain;
-	display: block;	
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
 }
 
 .img_8:after {
 	content: '';
-	background-image: url(../images/photos/08.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: left center;
-	height: 200px;
-	width: 180px;
-	display: block;	
+	background-image: url(../images/photos/08.jpg);	
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	display: block;
+	padding: 50px;
 }
 
 /* === 	SECTION DOWNLOAD === */
@@ -301,6 +301,11 @@ h1 {
 }
 
 .download_apple {
+	position: relative;
+}
+
+.download_apple:after {
+	content: '';
 	background-image: url(../images/icon_sprite.png);
 	background-position: -50px -200px;
 	border-radius: 5px;
@@ -310,22 +315,33 @@ h1 {
 	display: block;
 }
 
-.download_google {
+
+.download_google:after {
+	content: '';
 	background-image: url(../images/icon_sprite.png);
 	background-position: -50px -260px;
 	border-radius: 5px;
 	width: 110px;
 	height: 50px;
+	text-align: center;
 	margin: auto;
 	display: block;
 }
 
 .download_amazon {
+	position: relative;
+}
+
+
+.download_amazon:after {
+	content: '';
 	background-image: url(../images/icon_sprite.png);
 	background-position: -50px -320px;
 	border-radius: 5px;
 	width: 110px;
 	height: 50px;
+	position: absolute;
+	text-align: center;
 	display: block;
 	float: left;
 }
@@ -335,6 +351,10 @@ h1 {
 .footer {
 	border-top: 1px solid #777;
 	padding: 25px 0;
+}
+
+.support {
+	display: inline-block;
 }
 
 .support a {
@@ -356,13 +376,13 @@ h1 {
 	color: #2b3f4c;
 }
 
-.copoy p a:link,
+.copy p a:link,
 .copy p a:visited {
 	color: #777;
 }
 
 .social {
-
+	display: inline-block;
 }
 
 .social:after {
@@ -390,4 +410,113 @@ h1 {
 
 .clear {
 	clear:both;
-}d
+}
+
+/*
+= 	=	=	=
+MEDIA QUERIES
+=	=	=	=
+*/
+
+/* == XS = */
+@media screen and (max-width: 499px) {
+
+}
+
+/* == SM == */
+@media screen and (max-width: 739px) {
+
+	.section_main a {
+		text-align: center;
+	}
+
+	.download_button {
+		width: 100%;
+	}
+
+	.bar_orange:after {
+		content: '';
+		background: none;
+	}
+	
+	.apple,
+	.google,
+	.amazon {
+		margin: 5px auto;
+		width: 100%;
+		height: 50px;
+		background-color: black;
+		border-radius: 5px;
+	}
+
+	.download_apple,
+	.download_google,
+	.download_amazon {
+		width: 100%;
+		position: static;
+	}
+
+	.download_apple:after {
+		content: '';
+		background-image: url(../images/icon_sprite.png);
+		background-position: -50px -200px;
+		border-radius: 5px;
+		width: 110px;
+		height: 50px;
+		position: static;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+
+	.download_google:after {
+		content: '';
+		background-image: url(../images/icon_sprite.png);
+		background-position: -50px -260px;
+		border-radius: 5px;
+		width: 110px;
+		height: 50px;
+		text-align: center;
+		margin: auto;
+		display: block;
+	}
+
+	.download_amazon:after {
+		content: '';
+		background-image: url(../images/icon_sprite.png);
+		background-position: -50px -320px;
+		width: 110px;
+		height: 50px;
+		position: static;
+		text-align: center;
+		margin: auto;
+		display: block;
+		float: none;
+		}
+}
+
+/* = MD = */
+@media screen and (min-width: 740px) and (max-width: 1199px) {
+
+	.bar_orange:after {
+		content: '';
+		background-image: url(../images/intro_phone.png);
+		position: absolute;
+		height: 554px;
+		width: 325px;
+		bottom: 50px;
+		right: -10px;
+		overflow: visible;
+	}
+}
+
+/* = LG = */
+@media screen and (min-width: 980px) {
+
+}
+
+/* = XL = */
+@media screen and (min-width: 1200px) {
+
+}
+
