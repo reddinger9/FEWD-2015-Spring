@@ -21,7 +21,7 @@ p {
 /* === SECTION BACKGROUNDS AND STYLES === */
 
 header {
-	padding: 25px 0 50px;
+	padding: 50px 0 75px;
 	background: linear-gradient(to top, #e77e04, #fff 20%);
 }
 
@@ -70,7 +70,6 @@ header {
 .section_download {
 	background: #fff;
 	padding: 100px 0;
-	text-align: center;
 }
 
 footer {
@@ -102,6 +101,10 @@ a:visited {
 
 .header_content {
 	height: 60px;
+}
+
+.logo_bold {
+	font-weight: 600;
 }
 
 h1 {
@@ -158,9 +161,7 @@ h1 {
 	text-align: center;
 }
 
-.feature_tag:before,
-.feature_cloud:before,
-.feature_map:before {
+.feature_item:before {
 	content: '';
 	background-image: url(../images/icon_sprite.png);
 	background-repeat: no-repeat;
@@ -289,6 +290,11 @@ h1 {
 
 /* === 	SECTION DOWNLOAD === */
 
+.section_download {
+	text-align: center;
+	padding: 100px 0;
+}
+
 .section_download h3 {
 	font-size: 40px;
 	color:  #e77e04;
@@ -300,51 +306,34 @@ h1 {
 	color: #777;
 }
 
-.download_apple {
-	position: relative;
-}
 
-.download_apple:after {
-	content: '';
-	background-image: url(../images/icon_sprite.png);
-	background-position: -50px -200px;
-	border-radius: 5px;
-	width: 110px;
+.section_download_button {
 	height: 50px;
-	float: right;
-	display: block;
-}
-
-
-.download_google:after {
-	content: '';
-	background-image: url(../images/icon_sprite.png);
-	background-position: -50px -260px;
-	border-radius: 5px;
-	width: 110px;
-	height: 50px;
+	width: 200px;
 	text-align: center;
-	margin: auto;
-	display: block;
+	background: black url(../images/icon_sprite.png) no-repeat;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 0 5px;
+	text-align: center;
+}
+
+
+.download_apple {
+	background-position: center -200px;
+}
+
+.download_google {
+	background-position: center -260px;
 }
 
 .download_amazon {
-	position: relative;
+	background-position: center -320px;
 }
 
-
-.download_amazon:after {
-	content: '';
-	background-image: url(../images/icon_sprite.png);
-	background-position: -50px -320px;
-	border-radius: 5px;
-	width: 110px;
-	height: 50px;
-	position: absolute;
-	text-align: center;
-	display: block;
-	float: left;
-}
 
 /* === FOOTER === */
 
@@ -354,7 +343,8 @@ h1 {
 }
 
 .support {
-	display: inline-block;
+	display: block;
+	float: left;
 }
 
 .support a {
@@ -381,19 +371,31 @@ h1 {
 	color: #777;
 }
 
-.social {
+.social_links {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+}
+
+.social_button {
+	content: '';
+	background-image: url(../images/icon_sprite.png);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
 	display: inline-block;
 }
 
-.social:after {
-	content: '';
-	background-image: url(../images/icon_sprite.png);
-	background-position: -80px -0px;
-	background-repeat: no-repeat;
-	height: 40px;
-	width: 120px;
-	display: block;
-	float: right;
+.facebook{
+	background-position: -80px 0px;
+}
+
+.twitter{
+	background-position: -120px 0px;
+}
+
+.google_plus{
+	background-position: -160px 0px;
 }
 
 /* ==== CLEARFIX ==== */
@@ -436,7 +438,7 @@ MEDIA QUERIES
 
 	.bar_orange:after {
 		content: '';
-		background: none;
+		display: none;
 	}
 	
 	.apple,
@@ -493,6 +495,20 @@ MEDIA QUERIES
 		display: block;
 		float: none;
 		}
+
+	.social:after {
+		text-align: center;
+		float: none;
+		margin: auto;
+	}
+
+	.support, 
+	.support a {
+		text-align: center;
+		margin: auto;
+		float: none;
+		padding: 10px;
+	}
 }
 
 /* = MD = */
