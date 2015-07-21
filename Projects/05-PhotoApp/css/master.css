@@ -201,6 +201,7 @@ h1 {
 
 .section_thumbnail_content {
 	padding: 75px 0;
+	text-align: center;
 }
 
 .thumbnail {
@@ -303,16 +304,16 @@ h1 {
 	display: block;
 }
 
-.footer_social li {
-	display: inline-block;
-}
-
 .social_links {
 	float: right;
 	list-style-type: none;
 	padding-left: 0;
 	display: block;
 	margin: 0;
+}
+
+.footer_social li {
+	display: inline-block;
 }
 
 .social_button {
@@ -351,6 +352,7 @@ h1 {
 .clear {
 	clear:both;
 }
+
 
 /*
 = 	=	=	=
@@ -467,6 +469,11 @@ MEDIA QUERIES
 		margin-right: 0;
 	}
 
+	.fs-grid .fs-carousel-control {
+		  width: 20px !important;
+	  	  height: 40px !important;
+	}
+
 
 }
 
@@ -504,3 +511,86 @@ MEDIA QUERIES
 
 }
 
+
+/* Adjustments to Formstone styles */
+
+
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-page {
+	content: '';
+	height: 12px;
+	width: 12px;
+	color: #333;
+	border-style: none;
+}
+
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-item {
+	margin: 0;
+	padding: 0 5px;
+	margin: 0 5px;
+}
+
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control {
+	  width: 30px;
+  	  height: 60px;
+}
+
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control_next {
+	border: none;
+  right: -2px;
+  left: auto;
+  background: #fff;
+  border-radius: 40px 0 0 40px;
+}
+
+/* Create the right arrow */
+
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control_next:before {
+  border: none;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 4.5px;
+  margin-right: auto;
+  -webkit-transform: rotate(45deg);
+  width: 50%;
+  height: 25%;
+  left: 10%;
+}
+
+.fs-grid .fs-carousel-enabled .fs-carousel-control_previous {
+	  border: none;
+	  border-radius: 0 40px 40px 0;	
+	  left: 9px;
+	  box-shadow: none;
+}
+
+/*Create the left arrow*/
+
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control_previous:before {
+  border: none;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  margin-left: 4.5px;
+  margin-right: auto;
+  -webkit-transform: rotate(45deg);
+   width: 50%;
+  height: 25%;
+  left: 10%;
+}
+
+	
+	/*
+.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control {
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+}
+
+.fs-grid .carousel button {
+	border: none;
+}
+
+.fs-grid .fs-carousel-enabled .fs-carousel-control_next:before, .fs-carousel-enabled.fs-carousel-rtl .fs-carousel-control_previous:before {
+	margin-left: 10px;
+	margin-right: 0;
+}
+*/
