@@ -72,9 +72,6 @@ header {
 	padding: 100px 0;
 }
 
-footer {
-}
-
 /* === LINKS === */
 
 a:link,
@@ -108,7 +105,6 @@ a:visited {
 }
 
 h1 {
-	font-family: 'Roboto';
 	line-height: 60px;
 	font-size: 30px;
 	color: #2b3f4c;
@@ -143,6 +139,14 @@ h1 {
 	border-radius: 5px;
 	height: 50px;
 	width: 200px;
+	opacity: .8;
+	transition: opacity 0.25s linear, ;
+}
+
+.download_button:hover {
+
+	opacity: 1;
+	height: 400px;
 }
 
 /* === SECTION 2 === */
@@ -201,16 +205,20 @@ h1 {
 
 .section_thumbnail_content {
 	padding: 75px 0;
-	text-align: center;
+	text-align: left;
 }
 
 .thumbnail {
-	display: block;
+	display: inline-block;
 }
 
 .thumbnail img {
 	width: 100%;
 	margin: 10px 0;
+}
+
+.thumbnail:hover {
+	cursor: pointer;
 }
 
 /* === 	SECTION DOWNLOAD === */
@@ -242,8 +250,14 @@ h1 {
 	overflow: hidden;
 	display: inline-block;
 	border-radius: 5px;
-	margin: 0 5px;
+	margin: 5px;
 	text-align: center;
+	box-shadow: 0 0 0 #000;
+	transition: box-shadow 0.2s ease;
+}
+
+.section_download_button:hover {
+	box-shadow: 0 0 10px 5px #808080;
 }
 
 
@@ -298,7 +312,7 @@ h1 {
 	color: #2b3f4c;
 }
 		
-			/* SOCIAL LINKS */
+/* === SOCIAL MEDIA LINKS === */
 
 .footer_social {
 	display: block;
@@ -360,12 +374,12 @@ MEDIA QUERIES
 =	=	=	=
 */
 
-/* == XS = */
+/* == XS SCREEN = */
 @media screen and (max-width: 499px) {
 
 }
 
-/* == SM == */
+/* == SMALL SCREEN == */
 @media screen and (max-width: 739px) {
 
 	.section_main a {
@@ -440,6 +454,7 @@ MEDIA QUERIES
 
 	.section_thumbnail_content {
 		padding: 15px 0;
+		text-align: center;
 	}
 
 	.thumbnail img {
@@ -469,30 +484,33 @@ MEDIA QUERIES
 		margin-right: 0;
 	}
 
-	.fs-grid .fs-carousel-control {
-		  width: 20px !important;
-	  	  height: 40px !important;
+/* Removing next and previous arrows for mobile swiping */
+
+	.fs-grid .fs-carousel.fs-carousel-enabled .fs-carousel-control_next {
+		display: none !important;
 	}
 
+	.fs-grid .fs-carousel.fs-carousel-enabled .fs-carousel-control_previous {
+		display: none !important;
+	}
 
 }
 
-/* = MD = */
+/* = MEDIUM SCREEN = */
+
 @media screen and (min-width: 740px) and (max-width: 1199px) {
 
 	.bar_orange:after {
-		content: '';
 		background-image: url(../images/intro_phone.png);
-		position: absolute;
 		height: 554px;
 		width: 325px;
 		bottom: 50px;
 		right: -10px;
-		overflow: visible;
 	}
 
 	.section_thumbnail_content {
 		padding: 0;
+		text-align: center;
 	}
 
 	.thumb_margin {
@@ -514,8 +532,18 @@ MEDIA QUERIES
 
 /* Adjustments to Formstone styles */
 
+.fs-carousel_large {
+	text-align: center;
+}
 
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-page {
+.fs-carousel_large .fs-carousel-pagination button {
+	background: #666;
+	text-align: center;
+	display: none;
+}
+
+
+.fs-grid .fs-carousel_small .fs-carousel-page {
 	content: '';
 	height: 12px;
 	width: 12px;
@@ -523,20 +551,19 @@ MEDIA QUERIES
 	border-style: none;
 }
 
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-item {
+.fs-grid .fs-carousel_small .fs-carousel-item {
+	padding: 5px;
 	margin: 0;
-	padding: 0 5px;
-	margin: 0 5px;
 }
 
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control {
+.fs-grid .fs-carousel_large .fs-carousel-control {
 	  width: 30px;
   	  height: 60px;
 }
 
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control_next {
+.fs-grid .fs-carousel_large .fs-carousel-control_next {
 	border: none;
-  right: -2px;
+  right: 5px;
   left: auto;
   background: #fff;
   border-radius: 40px 0 0 40px;
@@ -544,7 +571,7 @@ MEDIA QUERIES
 
 /* Create the right arrow */
 
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control_next:before {
+.fs-grid .fs-carousel_large .fs-carousel-control_next:before {
   border: none;
   border-top: 2px solid black;
   border-right: 2px solid black;
@@ -559,13 +586,12 @@ MEDIA QUERIES
 .fs-grid .fs-carousel-enabled .fs-carousel-control_previous {
 	  border: none;
 	  border-radius: 0 40px 40px 0;	
-	  left: 9px;
-	  box-shadow: none;
+	  left: 5px;
 }
 
 /*Create the left arrow*/
 
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control_previous:before {
+.fs-grid .fs-carousel_large .fs-carousel-control_previous:before {
   border: none;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
@@ -577,20 +603,15 @@ MEDIA QUERIES
   left: 10%;
 }
 
-	
-	/*
-.fs-grid .carousel.fs-carousel-enabled .fs-carousel-control {
-	border-radius: 100%;
-	height: 50px;
-	width: 50px;
+/* Resize carousel buttons */
+
+.fs-grid .fs-carousel_small .fs-carousel-pagination button {
+	padding: 0;
 }
 
-.fs-grid .carousel button {
-	border: none;
-}
 
-.fs-grid .fs-carousel-enabled .fs-carousel-control_next:before, .fs-carousel-enabled.fs-carousel-rtl .fs-carousel-control_previous:before {
-	margin-left: 10px;
-	margin-right: 0;
-}
-*/
+
+
+
+
+

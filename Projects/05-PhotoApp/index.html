@@ -11,9 +11,20 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/master.css">
 
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/transition.js"></script>
+	<script src="js/mediaquery.js"></script>
+	<script src="js/touch.js"></script>
 
 </head>
 <body class="fs-grid">
@@ -28,8 +39,8 @@
 	<section class="bar_orange">
 		<div class="fs-row section_main">
 			<div class="fs-cell fs-xl-half fs-lg-half fs-md-half">
-				<h2>Nice Shot</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+				<h2 class="wow animated fadeInUp" data-wow-delay="1.5s">Nice Shot</h2>
+				<p class="wow animated fadeInUp" data-wow-delay="1.5s"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
 				<a href="#download" class="download_button">Download Now</a>
 			</div>
 		</div>	
@@ -52,20 +63,32 @@
 	</section>
 	<section  class="bar_grey">
 		<div class="fs-row section_thumbnail">
-			<div class="fs-cell fs-xl-half-centered fs-lg-full fs-md-full fs-sm-full section_thumbnail_content">
+			<div class="fs-cell fs-xl-4 fs-lg-4 fs-md-full fs-sm-full section_thumbnail_content">
 				<h2>Capture Life</h2>
 				<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			</div>
-			<div class="carousel">
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail thumb_margin"><img src="images/photos/thumb_01.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail thumb_margin"><img src="images/photos/thumb_02.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail"><img src="images/photos/thumb_03.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail"><img src="images/photos/thumb_04.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail"><img src="images/photos/thumb_05.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail"><img src="images/photos/thumb_06.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail"><img src="images/photos/thumb_07.jpg"></div>
-				<div class="fs-cell fs-xl-2 fs-lg-2 fs-md-1 fs-sm-half thumbnail"><img src="images/photos/thumb_08.jpg"></div>	
-			</div>	
+			<div class="fs-cell fs-xl-8 fs-lg-8 fs-md-full fs-sm-full">
+				<div class="fs-carousel_large">
+					<a class="js-lightbox large_img" href="images/photos/01.jpg"><img src="images/photos/thumb_01.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/02.jpg"><img src="images/photos/thumb_02.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/03.jpg"><img src="images/photos/thumb_03.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/04.jpg"><img src="images/photos/thumb_04.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/05.jpg"><img src="images/photos/thumb_05.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/06.jpg"><img src="images/photos/thumb_06.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/07.jpg"><img src="images/photos/thumb_07.jpg"></a>
+					<a class="js-lightbox large_img" href="images/photos/08.jpg"><img src="images/photos/thumb_08.jpg"></a>	
+				</div>	
+				<div class="fs-carousel_small">
+					<a class="thumbnail"><img src="images/photos/thumb_01.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_02.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_03.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_04.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_05.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_06.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_07.jpg"></a>
+					<a class="thumbnail"><img src="images/photos/thumb_08.jpg"></a>	
+				</div>
+			</div>
 		</div>
 	</section>
 	<section>
@@ -96,13 +119,6 @@
 		</div>		
 		
 	</footer>
-
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/core.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/carousel.js"></script>
-	<script src="js/mediaquery.js"></script>
-	<script src="js/touch.js"></script>
 
 </body>
 </html>
