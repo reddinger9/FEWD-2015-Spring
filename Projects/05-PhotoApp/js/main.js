@@ -40,8 +40,6 @@ $(document).ready(function(){
 
 		$('.fs-carousel_large').carousel('jump', index+1)
 
-		console.log(index)
-
 	});
 
 /*	on click of thumbnail

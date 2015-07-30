@@ -26,12 +26,25 @@
 	<script src="js/mediaquery.js"></script>
 	<script src="js/touch.js"></script>
 
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/grid.ie.css"/>
+		<script src="js/matchMedia-IE8.js"></script>	
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+		<script src="js/HTML5.js"></script>
+	<![endif]-->
+
+	<!--[if IE 9]>
+		<script src="js/matchMedia-IE9.js"></script>
+	<![endif]-->
+
 </head>
 <body class="fs-grid">
 	<header>
 		<div class="fs-row header">
 			<div class="fs-cell header_content">
-			<h1><span class="logo_bold">Pictitious</span> Pro<h1>
+			<h1><span class="logo_bold">Pictitious</span> Pro</h1>
 			</div>
 		</div>
 	</header>
@@ -59,7 +72,8 @@
 			<div class="fs-cell fs-xl-third fs-lg-third fs-md-third feature_item feature_map">
 				<h3 class="small_feature_photo">Photo Map</h3>
 				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Ligula porta felis.</p>
-			</div>				
+			</div>	
+		</div>			
 	</section>
 	<section  class="bar_grey">
 		<div class="fs-row section_thumbnail">
@@ -68,16 +82,18 @@
 				<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			</div>
 			<div class="fs-cell fs-xl-8 fs-lg-8 fs-md-full fs-sm-full">
-				<div class="fs-carousel_large">
+				<div class="fs-row">
+				<div class="fs-carousel_large fs-cell fs-lg-2-centered fs-md-2-centered">
 					<a class="js-lightbox large_img" href="images/photos/01.jpg"><img src="images/photos/thumb_01.jpg"></a>
 					<a class="js-lightbox large_img" href="images/photos/02.jpg"><img src="images/photos/thumb_02.jpg"></a>
 					<a class="js-lightbox large_img" href="images/photos/03.jpg"><img src="images/photos/thumb_03.jpg"></a>
 					<a class="js-lightbox large_img" href="images/photos/04.jpg"><img src="images/photos/thumb_04.jpg"></a>
 					<a class="js-lightbox large_img" href="images/photos/05.jpg"><img src="images/photos/thumb_05.jpg"></a>
 					<a class="js-lightbox large_img" href="images/photos/06.jpg"><img src="images/photos/thumb_06.jpg"></a>
-					<a class="js-lightbox large_img" href="images/photos/07.jpg"><img src="images/photos/thumb_07.jpg"></a>
-					<a class="js-lightbox large_img" href="images/photos/08.jpg"><img src="images/photos/thumb_08.jpg"></a>	
+					<a class="large_img" href="images/photos/07.jpg"><img  src="images/photos/thumb_07.jpg"></a>
+					<a class="large_img" href="images/photos/08.jpg"><img  src="images/photos/thumb_08.jpg"></a>
 				</div>	
+				</div>
 				<div class="fs-carousel_small">
 					<a class="thumbnail"><img src="images/photos/thumb_01.jpg"></a>
 					<a class="thumbnail"><img src="images/photos/thumb_02.jpg"></a>
